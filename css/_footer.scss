@@ -1,0 +1,140 @@
+// main: style.scss
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: darken($primary, 23%);
+  padding: 0 0 30px 0;
+  color: #eee;
+  font-size: 14px;
+
+  .footer-top {
+    background: darken($primary, 20%);
+    padding: 60px 0 30px 0;
+
+    .footer-info {
+      margin-bottom: 30px;
+      h3 {
+        font-size: 34px;
+        margin: 0 0 20px 0;
+        padding: 2px 0 2px 0;
+        line-height: 1;
+        font-family: $primary-font;
+        color: $white;
+        font-weight: 400;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 0;
+        font-family: $primary-font;
+        color: lighten($primary-light, 24%);
+      }
+    }
+
+    .social-links {
+      a {
+        font-size: 18px;
+        display: inline-block;
+        background: $primary;
+        color: $white;
+        line-height: 1;
+        padding: 8px 0;
+        margin-right: 4px;
+        border-radius: 50%;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+        transition: 0.3s;
+        &:hover {
+          background: $primary-dark;
+          color: #fff;
+        }
+      }
+    }
+
+    h4 {
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .footer-links {
+      margin-bottom: 30px;
+      ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          padding: 8px 0;
+          &:first-child {
+            padding-top: 0;
+          }
+        }
+
+        a {
+          color: lighten($primary-light, 24%);
+          &:hover {
+            color: $primary-light;
+          }
+        }
+      }
+    }
+
+    .footer-contact {
+      margin-bottom: 30px;
+      p {
+        line-height: 26px;
+      }
+    }
+
+    .footer-newsletter {
+      margin-bottom: 30px;
+
+      input[type="email"] {
+        border: 0;
+        padding: 6px 8px;
+        width: 65%;
+      }
+      input[type="submit"] {
+        background: $primary;
+        border: 0;
+        width: 35%;
+        padding: 6px 0;
+        text-align: center;
+        color: #fff;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          background: darken($primary, 10%);
+        }
+      }
+    }
+
+  }
+
+  .copyright {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .credits {
+    text-align: center;
+    font-size: 13px;
+    color: lighten($primary-light, 25%);
+    a {
+      color: lighten($primary-light, 15%);
+      &:hover {
+        color: lighten($primary-light, 25%);
+      }
+    }
+  }
+}

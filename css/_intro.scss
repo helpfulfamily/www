@@ -1,0 +1,113 @@
+// main: style.scss
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+#intro {
+  width: 100%;
+  position: relative;
+  background: url('../img/intro-bg.png') center bottom no-repeat ;
+  background-size: cover;
+  padding: 200px 0 120px 0;
+
+
+  @media (max-width: 991px) {
+    padding: 140px 0 60px 0;
+  }
+
+  @media (max-width: 574px) {
+    padding: 100px 0 20px 0;
+  }
+
+  .intro-img {
+    width: 50%;
+    float: right;
+
+    @media (max-width: 991px) {
+      width: 80%;
+      float: none;
+      margin: 0 auto 25px auto;
+    }
+
+  }
+
+  .intro-info {
+    width: 50%;
+    float: left;
+
+    @media (max-width: 991px) {
+      width: 80%;
+      float: none;
+      margin: auto;
+      text-align: center;
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+
+    h2 {
+      color: #fff;
+      margin-bottom: 40px;
+      font-size: 48px;
+      font-weight: 700;
+
+
+      span {
+        color: $primary-light;
+        border: 1px solid $primary-light ;
+      }
+      .redspan {
+        color: red;
+        border: 1px solid red ;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 34px;
+        margin-bottom: 30px;
+      }
+
+    }
+    .helpfularmy{
+      letter-spacing: 1px;
+      border: 0px;
+      color: #A7C1FD;
+    }
+
+    .btn-get-started, .btn-services {
+      font-family: $primary-font;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 10px 32px;
+      border-radius: 50px;
+      transition: 0.5s;
+      margin: 0 20px 20px 0;
+      color: #fff;
+    }
+
+
+    .btn-get-started {
+      background: $primary;
+      border: 2px solid  $primary;
+      color: #fff;
+      &:hover {
+        background: none;
+        border-color: #fff;
+        color: #fff;
+      }
+    }
+
+    .btn-services {
+      border: 2px solid #fff;
+      &:hover {
+        background: $primary;
+        border-color: $primary;
+        color: #fff;
+      }
+    }
+
+  }
+
+}
